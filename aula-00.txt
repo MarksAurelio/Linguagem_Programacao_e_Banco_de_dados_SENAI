@@ -1,1 +1,10 @@
-ECHO est† ativado.
+comandos:
+git init
+git config --local user.name 'seu nome'
+git config --local user.enail 'seuemail@email.com'
+git status
+git push -u origin master
+
+-- quando necess√°rio
+git config credential.user.name 'seu nome'
+
