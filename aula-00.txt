@@ -20,6 +20,9 @@ git config --local user.name 'seu nome'
 git config --local user.enail 'seuemail@email.com'
 git status
 git push -u origin master
+git remote -v
+git remote rm origin
+git remote add origin
 
 -- quando necessário
 git config credential.user.name 'seu nome'
@@ -32,7 +35,7 @@ Merge: Combinar mudanças de diferentes branches.
 Clone: Copiar um repositório remoto para o local.
 Pull/Push: Trazer mudanças de um repositório remoto (pull) ou enviar suas mudanças para ele (push).
 #comandos
-# verificar 
+# verificar se existe usuário e e-mail configurado
 git config user.name
 git config user.email
 
@@ -41,6 +44,9 @@ git config --global user.email
 
 git config user.name "${Seu Nome}"
 git config user.email "${seuemail@exemplo.com}"
+
+#verifica qual o vinculo remoto do projeto no github
+git remote -v
 
 echo "${alguma mensagem}" >> README.md
 git init
