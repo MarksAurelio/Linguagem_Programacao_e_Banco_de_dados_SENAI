@@ -1,8 +1,8 @@
 <meta charset="utf-8">
 <script>
-    const jantar = Number(prompt("Qual o valor do jantar R$: "));
-    const taxaGarcom = jantar * 0.10; 
+    const jantar = Number(prompt("Qual o valor do jantar R$: ")); // lê o valor do jantar
+    const taxaGarcom = jantar * 0.10; // calcula variavéis de saída
     const total = jantar + taxaGarcom;
 
-    alert("O valor do jantar foi: " + total)
+    alert(`Jantar R$ ${jantar.toFixed(2)}\nGarçom R$ ${taxaGarcom.toFixed(2)}\nTotal R$ ${total.toFixed(2)}`) // serve para indicar q o valor apresentado deve conter duas casas decimais.
 </script>
