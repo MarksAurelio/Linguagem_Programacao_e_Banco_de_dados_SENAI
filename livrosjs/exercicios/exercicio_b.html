@@ -1,0 +1,10 @@
+<!-- b) Elaborar um programa para uma pizzaria, o qual leia o valor total de -->
+<!-- uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser -->
+<!-- pago por cliente. -->
+ <meta charset="utf-8">
+ <script>
+    const conta = Number(prompt("Digite o valor total da conta: "));
+    const clientes = Number(prompt("Digite quantos clientes irão pagar a conta: "));
+    const divisaoConta = conta / clientes;
+    alert(`O valor para cada cliente é: ${divisaoConta.toFixed(2)}`);
+ </script>

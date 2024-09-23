@@ -1,0 +1,11 @@
+<!-- c) Elaborar um programa para uma loja, o qual leia o preço de um produto -->
+<!-- e informe as opções de pagamento da loja. Calcule e informe o valor para -->
+<!-- pagamento à vista com 10% de desconto e o valor em 3x. -->
+<meta charset="utf-8">
+<script>
+    const precoProduto = Number(prompt("Digite o valor o produto: "));
+    const opcoesPgto = ("À vista com 10% ou em 3 vezes");
+    const aVista = precoProduto - (precoProduto * 0.10);
+    const em3x = precoProduto / 3;
+    alert(`O valor do produto à vista é: ${aVista.toFixed(2)}\ne o valor do produto em 3x é: ${em3x.toFixed(2)}`)
+</script>
