@@ -8,3 +8,9 @@ frm.addEventListener("submit", (e)=>{
     resp.innerText = `Olá ${nome}`;
     e.preventDefault(); // vai enviar que o form enviou os dados pro destino
 })
+
+function executar(evento) {
+    const nome = frm.inNome.value; // obtém o nome digitado no form
+    resp.innerText =  `Olá ${nome}`; // exibe a resposta do programa
+    evento.preventDefault();
+}
