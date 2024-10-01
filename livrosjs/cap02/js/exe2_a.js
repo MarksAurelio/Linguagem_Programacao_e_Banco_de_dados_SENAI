@@ -1,12 +1,13 @@
-frm.addEventListener("submit", (e)=> {
-    const medicamento = document.getElementById('inMedicamento').value
-    const preco = parseFloat(document.getElementById('inPreco').value)
+const frm = document.querySelector("form")
+const resp1 = document.querySelector("h3")
+const resp2 = document.querySelector('h4')
 
-    const valorTotal = preco * 2
-    const valorFinal = Math.floor(valorTotal)
+frm.addEventListener("submit", (e)=>{
+    const medicamento = frm.inMedicamento.value
+    const preco = frm.inPreco.value
 
-    const resultado = document.getElementById('resultado');
-    resultado.textContent = `O valor final de 2 unidades de ${descricao} na promoção é R$ ${valorFinal}.00`;
-
+    resp1.innerText = `Promoção de Medicamento R$ ${medicamento}`
+    resp2.innerText = `Leve 2 unidades por R$ ${(Math.floor(preco) * 2).toFixed(2)}`
+    
     e.preventDefault()
 })
