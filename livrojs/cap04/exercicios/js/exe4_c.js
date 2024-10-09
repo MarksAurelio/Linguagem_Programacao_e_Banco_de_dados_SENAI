@@ -7,13 +7,13 @@ frm.addEventListener("submit", (e) => {
     const valor = Number(frm.inValor.value)
 
     if (valor > 1 && valor < 1.75) {
-        alert(`Tempo: 30 min \n Troco R$:${troco = valor - 1}`)
+        alert(`Tempo: 30 min \nTroco R$:${troco = valor - 1}`)
     }
     else if (valor > 1.75 && valor < 3) {
-        alert(`Tempo: 60 min \n Troco R$:${troco = valor - 1.75}`)
+        alert(`Tempo: 60 min \nTroco R$:${troco = valor - 1.75}`)
     }
     else if (valor >= 3) {
-        alert(`Tempo: 120 min \n Troco R$:${troco = valor - 3}`)
+        alert(`Tempo: 120 min \nTroco R$:${troco = valor - 3}`)
     }
     else {
         alert("Tempo insuficiente!")

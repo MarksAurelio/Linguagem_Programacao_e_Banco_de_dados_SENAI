@@ -8,7 +8,10 @@ frm.addEventListener("submit", (e) => {
     const ladoB = Number(frm.inLadoB.value)
     const ladoC = Number(frm.inLadoC.value)
 
-    if (ladoA === ladoB && ladoB === ladoC) {
+    if (ladoA > (ladoB + ladoC) || ladoB > (ladoA + ladoC) || ladoC > (ladoA + ladoB)) {
+        alert('Não pode forma um triângulo')
+    }
+    if (ladoA === ladoB && ladoA === ladoC) {
         alert(`Lados podem formar um triângulo \nTipo: Equilátero`)
     }
     else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
