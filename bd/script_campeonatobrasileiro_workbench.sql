@@ -79,4 +79,3 @@ desc partida;
 alter table evento drop constraint FK_EventoPartida;
 alter table partida modify id_partida int auto_increment;
 alter table evento add constraint FK_EventoPartida foreign key(id_partida) references partida(id_partida);
-
